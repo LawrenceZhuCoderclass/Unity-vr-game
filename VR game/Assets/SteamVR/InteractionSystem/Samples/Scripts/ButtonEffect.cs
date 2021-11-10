@@ -9,6 +9,8 @@ namespace Valve.VR.InteractionSystem.Sample
 {
     public class ButtonEffect : MonoBehaviour
     {
+        public GameObject prefab;
+    
         public void OnButtonDown(Hand fromHand)
         {
             ColorSelf(Color.cyan);
@@ -27,6 +29,11 @@ namespace Valve.VR.InteractionSystem.Sample
             {
                 renderers[rendererIndex].material.color = newColor;
             }
+        }
+        private void OnTriggerEnter(Collider other)
+        {
+            Instantiate(prefab, new Vector3 (0, 0, 0), Quaternion.identity);
+            Debug.Log("a can just spawned");
         }
     }
 }
