@@ -11,4 +11,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b9807f389cc7fd14493056619a775d0e, type: 3}
   m_Name: Parameters
-  m_EditorClassIdentifier: Assembly-CSharp::SpawnManagerScritptableObject
+  m_EditorClassIdentifier: Assembly-CSharp::GameParameters
+  enableDayAndNightCycle: 1
+  dayLengthInSeconds: 20
+  dayInitialRatio: 0.2
