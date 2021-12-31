@@ -30,10 +30,11 @@ namespace Valve.VR.InteractionSystem.Sample
                 renderers[rendererIndex].material.color = newColor;
             }
         }
-        private void OnTriggerEnter(Collider other)
+        public void Spawn()
         {
-            Instantiate(prefab, new Vector3 (0, 0, 0), Quaternion.identity);
             Debug.Log("a can just spawned");
+            Instantiate(prefab, new Vector3 (0, 0, 0), Quaternion.identity);
+            
         }
     }
 }

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
 guid: fdc6e48706c13fa4a8f807ff0f16e9de
-timeCreated: 1530130146
-licenseType: Store
 MonoImporter:
+  externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - prefab: {fileID: 8183364436385177504, guid: 5f4421370fefc4e41bd4dac4b98f3244, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
