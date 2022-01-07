@@ -55,6 +55,7 @@
     <Compile Include="Assets\Scripts\GameParameters.cs" />
     <Compile Include="Assets\GameManager.cs" />
     <Compile Include="Assets\Scripts\DayAndNightCycler.cs" />
+    <Compile Include="Assets\Scripts\SpawnMachine.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Sci-Fi Styled Modular Pack\Readme.txt" />
