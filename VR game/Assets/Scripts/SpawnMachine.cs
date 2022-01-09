@@ -23,27 +23,25 @@ namespace Valve.VR.InteractionSystem.Sample
         public void button1effect()
         {
             Destroy(currentGameObject);
-            machine1 = currentGameObject;
             Debug.Log("Machine1");
-            Instantiate(machine1, new Vector3(15, 1, -17), Quaternion.identity);
+            currentGameObject = Instantiate(machine1, new Vector3(15, 0, -17), Quaternion.identity);
             
 
         }
         public void button2effect()
         {
             Destroy(currentGameObject);
-            machine2 = currentGameObject;
+            
             Debug.Log("Machine2");
-            Instantiate(machine2, new Vector3(15, 1, -17), Quaternion.identity);
+            currentGameObject = Instantiate(machine2, new Vector3(15, 0, -17), Quaternion.identity);
             
 
         }
         public void button3effect()
         {
-            Destroy(currentGameObject);
-            machine3 = currentGameObject;
+            Destroy(currentGameObject);            
             Debug.Log("Machine3");
-            Instantiate(machine3, new Vector3(15, 1, -17), Quaternion.identity);
+            currentGameObject = Instantiate(machine3, new Vector3(15, 0.06f, -17), Quaternion.identity);
             
 
         }
