@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Parameters
   m_EditorClassIdentifier: Assembly-CSharp::GameParameters
   enableDayAndNightCycle: 1
-  dayLengthInSeconds: 20
+  dayLengthInSeconds: 40
   dayInitialRatio: 0.2

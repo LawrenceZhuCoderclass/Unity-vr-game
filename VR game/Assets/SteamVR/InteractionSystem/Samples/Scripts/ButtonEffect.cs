@@ -33,8 +33,8 @@ namespace Valve.VR.InteractionSystem.Sample
         public void Spawn()
         {
             Debug.Log("a can just spawned");
-            Instantiate(prefab, new Vector3 (0, 0, 0), Quaternion.identity);
-            
+            Instantiate(prefab, new Vector3 (10, 2, -19), Quaternion.identity);
+            System.Threading.Thread.Sleep(2000);
         }
     }
 }
