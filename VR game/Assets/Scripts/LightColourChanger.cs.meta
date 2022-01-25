@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 0d9b025b2bd22ed48a4b946c3acde0da
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - Light1: {fileID: 105546, guid: e15828603e27c5e42b39860e4f55da70, type: 3}
+  - Light2: {fileID: 167912, guid: 8e32be8f06ec06448ac537b609c2d7f7, type: 3}
+  - Light3: {instanceID: 0}
+  - Button1: {instanceID: 0}
+  - Button2: {instanceID: 0}
+  - Button3: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
