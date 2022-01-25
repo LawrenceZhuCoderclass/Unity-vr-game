@@ -7,6 +7,7 @@ public class LightColourChanger : MonoBehaviour
     public GameObject Light1;
     public GameObject Light2;
     public GameObject Light3;
+    public GameObject Light4;
 
     public GameObject Button1;
     public GameObject Button2;
@@ -15,11 +16,7 @@ public class LightColourChanger : MonoBehaviour
     private Light colour1;
     private Light colour2;
     private Light colour3;
-
-    private Transform Lamp1;
-    private Transform Lamp2;
-    private Transform Lamp3;
-
+    private Light colour4;
 
     [SerializeField] Color Colour1;
     [SerializeField] Color Colour2;
@@ -27,35 +24,33 @@ public class LightColourChanger : MonoBehaviour
 
     void Start()
     {
-        Lamp1 = Light1.gameObject.transform.GetChild(0);
-        Lamp2 = Light2.gameObject.transform.GetChild(0);
-        Lamp3 = Light3.gameObject.transform.GetChild(0);
 
-        colour1 = Lamp1.GetComponent<Light>();
-        colour2 = Lamp2.GetComponent<Light>();
-        colour3 = Lamp3.GetComponent<Light>();
+
+        colour1 = Light1.GetComponent<Light>();
+        colour2 = Light2.GetComponent<Light>();
+        colour3 = Light3.GetComponent<Light>();
+        colour4 = Light4.GetComponent<Light>();
     }
 
     public void Button1Colour()
-    {
-        Debug.Log("blue");
-        colour1.color = Color.Lerp(colour1.color, Colour1,1);
-        colour2.color = Color.Lerp(colour2.color, Colour1,1);
-        colour3.color = Color.Lerp(colour3.color, Colour1,1);
+    {  
+        colour1.color = Colour1;
+        colour2.color = Colour1;
+        colour3.color = Colour1;
+        colour4.color = Colour1;
     }
     public void Button2Colour()
     {
-        Debug.Log("red");
-        colour1.color = Color.Lerp(colour1.color, Colour2, 1);
-        colour2.color = Color.Lerp(colour2.color, Colour2, 1);
-        colour3.color = Color.Lerp(colour3.color, Colour2, 1);
-
+        colour1.color = Colour2;
+        colour2.color = Colour2;
+        colour3.color = Colour2;
+        colour4.color = Colour2;
     }
     public void Button3Colour()
     {
-        Debug.Log("green");
-        colour1.color = Color.Lerp(colour1.color, Colour3, 1);
-        colour2.color = Color.Lerp(colour2.color, Colour3, 1);
-        colour3.color = Color.Lerp(colour3.color, Colour3, 1);
+        colour1.color = Colour3;
+        colour2.color = Colour3;
+        colour3.color = Colour3;
+        colour4.color = Colour3;
     }
 }
